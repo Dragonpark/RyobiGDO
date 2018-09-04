@@ -25,6 +25,6 @@ RUN mkdir /opt/RyobiGDOProxy
 RUN wget -P /opt/RyobiGDOProxy https://raw.githubusercontent.com/Madj42/RyobiGDO/master/RyobiGDOProxy.js
 RUN chown -R nobody:users /opt/RyobiGDOProxy
 
-EXPOSE 8024
+EXPOSE 3042
 
 CMD ["nodejs", "/opt/RyobiGDOProxy/RyobiGDOProxy.js"]
